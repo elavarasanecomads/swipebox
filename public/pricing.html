@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="font-sans antialiased">
+    <div id="navigation"></div>
+    <main class="py-16">
+        <div class="text-center"> 
+        <h1 class="text-4xl font-bold tracking-tight text-slate-900">Pricing</h1>
+        <h2 class="mx-auto mt-6 text-lg text-slate-600">We've got a pricing plan that's perfect for you</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-8">
+            <div class="p-4 rounded shadow border space-y-2">
+                <p class="font-bold text-xl">Basic Plan</p>
+                <p>You can access swipebox with <br> limited features. </p>
+                <p><span class="text-5xl font-bold">₹ 0</span> / per year</p>
+                <div class="pt-4">
+                    <a href="#">
+                        <button class="w-32 p-2 font-semibold text-gray-900 uppercase bg-gray-200 rounded-sm" disabled>Choose Plan</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-4 rounded shadow border space-y-2">
+                <p class="font-bold text-xl">Attendance Only</p>
+                <p>You can access attendance features only in swipebox. </p>
+                <p><span class="text-5xl font-bold">₹ 999</span> / per year / For 10 users</p>
+                <div class="pt-4">
+                    <a href="#">
+                        <button class="w-32 p-2 font-semibold text-white uppercase bg-green-600 rounded-sm">Choose Plan</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-4 rounded shadow border space-y-2">
+                <p class="font-bold text-xl">Attendance + Payroll</p>
+                <p>You can access attendance + payroll features in swipebox. </p>
+                <p><span class="text-5xl font-bold">₹ 1999</span> / per year / For 10 users</p>
+                <div class="pt-4">
+                    <a href="#">
+                        <button class="w-32 p-2 font-semibold text-white uppercase bg-green-600 rounded-sm">Choose Plan</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+<script>
+    $(function () {
+        $("#navigation").load("nav.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+</html>
