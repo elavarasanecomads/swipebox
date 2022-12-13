@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Swipebox</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://salarydocument.fra1.digitaloceanspaces.com/logo/swipebox-logo.png">
+    
+</head>
+
+<body class="font-sans antialiased">
+    <div id="navigation"></div>
+    <main>
+        <div class="flex items-center justify-center py-12">
+            <div class="w-full max-w-4xl">
+                <div class="space-y-4">
+                    <h1 class="text-4xl font-bold tracking-tight text-slate-900">Terms and Conditions</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+<script>
+    $(function () {
+        $("#navigation").load("nav.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+</html>
